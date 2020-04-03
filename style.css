@@ -1,0 +1,15 @@
+.cart-store{
+    background-color: #3a1564;
+    height: 189.9px;
+    color: white;
+    padding: 36px 36px 67px;
+}
+.product-list button{
+    background-color: #3a1564;
+    color: white;
+    border-radius: 2rem; 
+
+}
+.product-list h3{
+    font-weight: bolder;
+}
