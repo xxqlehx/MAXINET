@@ -17,7 +17,7 @@ let products = [
 for(let i=0; i < carts.length; i++){
     carts[i].addEventListener('click', () => {
         cartNumbers(products[i]);
-        totalCost(products[i]);
+        // totalCost(products[i]);
     })
 }
 function onLoadCartNumbers(){
@@ -87,21 +87,21 @@ function totalCost(product){
 
 }
 
-function displayCart(){
-    let cartItems = localStorage.getItem("productsIncart");
-    cartItems = JSON.parse(cartItems);
-    let productContainer = document.querySelector(".products");
+// function displayCart(){
+//     let cartItems = localStorage.getItem("productsIncart");
+//     cartItems = JSON.parse(cartItems);
+//     let productContainer = document.querySelector(".products");
 
-    console.log(cartItems);
-    if(cartItems && productContainer ){
-        productContainer.innerHTML = '';
-        Object.values(cartItems).map(item => {
-            productContainer.innerHTML +=`<div class="product"><ion-icon name = "close-circle"></ion-icon><img src = "./images/${item.tag}.jpg"></img><span>${item.name}</span></div>`
+//     console.log(cartItems);
+//     if(cartItems && productContainer ){
+//         productContainer.innerHTML = '';
+//         Object.values(cartItems).map(item => {
+//             productContainer.innerHTML +=`<div class="product"><ion-icon name = "close-circle"></ion-icon><img src = "./images/${item.tag}.jpg"></img><span>${item.name}</span></div>`
             
-        });
-    }
+//         });
+//     }
 
 
-}
+// }
 onLoadCartNumbers();
-displayCart();
+// displayCart();
