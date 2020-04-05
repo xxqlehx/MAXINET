@@ -111,4 +111,17 @@
 .pd-box{
     width: auto;
     text-align: center;
+
+}
+.net-box{
+    text-align: center;
+}
+.note-box{
+    text-align: center;
+}
+.detail-note{
+    text-align: left;
+}
+.box-detail-note{
+    margin-left: auto;
 }
